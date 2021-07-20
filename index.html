@@ -3,18 +3,20 @@
 <head>
     <title>Index</title>
     <style>
-        body{
-            width:100%;
+        html,body{
             height:100%;
+            width:100%;
+            margin:0;
+            background-color: #e0e0e0;
         }
         .Content{
-            width:100%;
-            height:100%;
-        }
-        img{
-            height:150px;
-             width:150px;
-        }
+            height:100vh;
+       }
+       .hotel-images{
+           margin:0% 15% 0;
+           padding: 4%;
+           justify-content: space-evenly;
+       }
         #social-media-image{
             height:20px; 
             width:22px;
@@ -23,23 +25,27 @@
 </head>
 <body>
     <div>
-        <header>
-            <img src="assests/images/logo.png" style=" height:60px; width:60px; ">
+        <header style="background-color: rosybrown;">
+            <img src="assests/images/logo.png" style=" height:60px; width:60px;">
             <a href="login.html" target="_self">Login</a>
         </header>
+
         <div class="Content">
-            <form>
-                <input type="text" placeholder="City">
-            </form>
+            <div style="background-image: url(https://media-cdn.tripadvisor.com/media/photo-o/14/10/2e/af/india.jpg); 
+            background-position:center;background-size:cover; height:380px;background-repeat: no-repeat;">
+                <input type="text" placeholder="City" >
+            </div>
+            <div class="hotel-images">
             <a href="list.html">
-            <img src="https://media-cdn.tripadvisor.com/media/photo-s/15/33/fe/a2/new-delhi.jpg">
+            <img src="https://media-cdn.tripadvisor.com/media/photo-s/15/33/fe/a2/new-delhi.jpg" style="border-radius:25%; height:150px;width:150px;padding:4%;">
             </a>
-            <img src="https://media-cdn.tripadvisor.com/media/photo-s/15/33/fc/f0/goa.jpg">
-            <img src="https://media-cdn.tripadvisor.com/media/photo-s/0f/98/f7/df/charminar.jpg">
-            <img src="https://media-cdn.tripadvisor.com/media/photo-s/15/33/fe/ac/kolkata-calcutta.jpg">
-            <br><a href="index.html">View more>></a>
+            <img src="https://media-cdn.tripadvisor.com/media/photo-s/15/33/fc/f0/goa.jpg"style="border-radius:25%; height:150px;width:150px;padding:4%;">
+            <img src="https://media-cdn.tripadvisor.com/media/photo-s/0f/98/f7/df/charminar.jpg"style="border-radius:25%; height:150px;width:150px;padding:4%;">
+            <img src="https://media-cdn.tripadvisor.com/media/photo-s/15/33/fe/ac/kolkata-calcutta.jpg"style="border-radius:25%; height:150px;width:150px;padding:4%;">
+            <br><a href="index.html" style="position:fixed;bottom:45px;left:0px">View more>></a>
         </div>
-        <footer>
+        </div>
+        <footer style="background-color: rosybrown;position:fixed;bottom:0px;right:0px;left:0px;">
             <a href="contact.html" target="_self">Contact Us</a>
             <br/>
             <a href="https://www.facebook.com/" target="_blank">
@@ -50,8 +56,7 @@
             </a>
             <a href="https://twitter.com/" target="_blank">
                 <img id="social-media-image"src="assests/images/twitter.png">
-            </a>
-            <p>&#169; 2020 ROOM SEARCH PVT. LTD</p>
+            </a>&#169; 2020 ROOM SEARCH PVT. LTD
         </footer>
     </div>
 </body>
