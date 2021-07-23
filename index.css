@@ -1,0 +1,32 @@
+.hotel-images{
+    margin:0% 15% 0;
+    padding: 4%;
+    justify-content: space-evenly;
+}
+#placeImg{
+    border-radius:25%;
+     height:150px;
+     width:150px;
+     padding:4%;
+}
+.Content{
+    height:100vh;
+}
+.bgImg{
+    background-image: url(https://media-cdn.tripadvisor.com/media/photo-o/14/10/2e/af/india.jpg);
+    background-position:center;
+    background-size:cover;
+    height:380px;
+    background-repeat: no-repeat;
+}
+#city{
+   border-radius: 12px;
+   border: 1px transparent;
+   border-color: white;
+   background-color: #f1f1f1;
+   padding: 10px;
+   font-size: 16px;
+   top:50%;
+   left:45%;
+   width:200px;
+}

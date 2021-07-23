@@ -2,79 +2,64 @@
 <html>
 <head>
     <title>List</title>
-    <style>
-        html,body{
-            width:100%;
-            height:100%;
-            margin:0;
-            background-color: #e0e0e0;
-        }
-        #social-media-image{
-            height:20px; 
-            width:22px;
-        }
-        #Hotel-div{
-            background-color:  rgb(132,136,139);
-            width:40%;
-            margin:2%;
-        }
-    </style>
+    <link href="styles/common.css" rel="stylesheet"/>
+    <link href="styles/list.css" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet"/>
 </head>
 <body>
-        <header style="background-color: rosybrown;">
-            <a href="index.html" target="_self">
-                <img src="assests/images/logo.png" style=" height:60px; width:60px; ">
-            </a>
-            <a href="login.html" target="_self">Login</a>
-        </header>
-        <div class="Content" id="list-view">
-            <ul>
-                <li>
-                    <a href="#list-view">List View</a>
-                </li>
-                <li>
-                    <a href="#map-view">Map View</a>
-                </li>
-            </ul>
-         <a href="detail.html">    
-            <div id="Hotel-div">
-                <img id="hotel-img" src="https://media-cdn.tripadvisor.com/media/photo-w/17/b3/09/b4/by-the-poolside.jpg" style="height:200px;width:250px;">
+    <div class="body">
+        <nav class="navbar">
+            <div class="websitelogo">
+                <img src="assests/images/logo.png" class="Logo">
+                    <a class="nav-links" id="login" href="login.html" target="_self" style="text-decoration: none;">Login</a>
+            </div>
+        </nav>  
+        <div class="Content">
+           <div style="padding-top: 100px;text-align: center;">
+                <a href="#list-view" style="text-decoration: none;font-weight: bold;">List View  </a>
+                <a href="#map-view" style="text-decoration: none;font-weight: bold;"> Map View</a>
+            </div>
+         <a href="detail.html">  
+            <div class="hotelContainer" id="list-view" >  
+            <div class="Hotel-div" style="float:left;">
+                <img class="hotel-img" src="https://media-cdn.tripadvisor.com/media/photo-w/17/b3/09/b4/by-the-poolside.jpg" >
                  <p><h3>Radisson Blu Hotel</h3>
                     5 star<br><br>
                     New Delhi</p>
                 </p>
-        </div>
-    </a>
-        <div id="Hotel-div">
-            <img id="hotel-img"src="https://media-cdn.tripadvisor.com/media/photo-w/15/06/31/5f/facade.jpg"  style="height:200px;width:250px;">
+            </div>
+        </a>
+        <div class="Hotel-div" style="float:right;">
+            <img class="hotel-img"src="https://media-cdn.tripadvisor.com/media/photo-w/15/06/31/5f/facade.jpg" >
                 <p><h3>The Lalit New Delhi</h3>
                     4.5 Star<br><br>
                     New Delhi
                 </p>
         </div>
-        <div id="Hotel-div">
-            <img id="hotel-img"src="https://media-cdn.tripadvisor.com/media/photo-w/1b/4e/9b/11/exterior.jpg"  style="height:200px;width:250px;">
+        <div class="Hotel-div" style="float:left;">
+            <img class="hotel-img"src="https://media-cdn.tripadvisor.com/media/photo-w/1b/4e/9b/11/exterior.jpg" >
                 <p><h3>Taj Palace</h3>
                     4.0 Star<br><br>
                     New Delhi
                 </p>
-        </div>         
+        </div>  
+        </div>       
             <img id="map-view" src="https://cdn.pixabay.com/photo/2018/01/31/05/43/web-3120321_960_720.png">
-            <p>Map View</p>
+            <p id="map-view">Map View</p><br/><br/>
         </div>
-        <footer style="background-color: rosybrown;">
-            <a href="contact.html" target="_self">Contact Us</a>
+    </div>
+        <footer class="footer">
+            <a id="contactUs"href="contact.html" target="_self">Contact Us</a>
             <br/>
-            <a href="https://www.facebook.com/" target="_blank">
-                <img id="social-media-image" src="assests/images/facebook.png">
+            <a href="https://twitter.com/" target="_blank">
+                <img id="social-media-image"src="assests/images/twitter.png">
             </a>
             <a href="https://www.instagram.com/" target="_blank">
-                <img id="social-media-image" src="assests/images/instagram.png">
+                <img id="social-media-image" src="assests/images/instagram.png" >
             </a>
-            <a href="https://twitter.com/" target="_blank">
-                <img id="social-media-image" src="assests/images/twitter.png">
-            </a>
-            <p>&#169; 2020 ROOM SEARCH PVT. LTD</p>
+            <a href="https://www.facebook.com/" target="_blank">
+                <img id="social-media-image"src="assests/images/facebook.png">
+            </a><div class="footerText">&#169; 2020 ROOM SEARCH PVT. LTD</div>
         </footer>
 </body>
 </html>

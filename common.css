@@ -1,0 +1,54 @@
+body{
+    height:100%;
+    width:100%;
+    margin:0;
+    background-color: #e0e0e0;
+}
+.Logo{
+    height:60px; 
+    width:60px;
+    margin:auto;
+}
+#social-media-image{
+    height:20px; 
+    width:22px;
+    float:right;
+    margin-bottom: 2%;
+}
+
+.footer{
+    background-color: rosybrown;
+    position:fixed;
+    bottom:0px;
+    right:0px;
+    left:0px;
+}
+.nav-links{
+    display:inline;
+    float:right;
+    margin:20px;
+}
+.navbar{
+    background-color: rosybrown;
+    position: fixed;
+    left:0px;
+    right:0px;
+    top: 0px;
+}
+.footerText{
+    width:100%;
+    text-align: center;
+    position: absolute;
+    bottom: 0px;
+    font-size: 10px;
+}
+    
+* {
+    font-family: ubuntu , sans-serif;
+    color:black;
+ }
+ #contactUs{
+    text-decoration: none;
+    float:left;
+    margin:10px;
+ }
