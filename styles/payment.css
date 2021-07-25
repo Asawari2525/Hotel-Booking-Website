@@ -1,0 +1,21 @@
+.payingHotel{
+    background-color: rgb(132, 136, 139);
+    width:50%;
+    margin-top:7%;
+    margin-bottom:2%;
+}
+#payingHotelImg{
+    height:200px;
+     width:200px;
+}
+#payDetails{
+    margin:2%;
+    border-radius: 5px;
+    border: 1px solid black;
+    padding:1% 2%;
+    background-color: rosybrown;
+    margin-bottom: 100px;
+}
+.Content{
+    height:100vh;
+}

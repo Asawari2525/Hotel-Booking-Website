@@ -1,0 +1,56 @@
+.hotel-images{
+    display: flexbox;
+    margin:0% 15% 0;
+    padding: 4%;
+    justify-content: space-evenly;
+}
+#placeImg{
+    border-radius:25%;
+     height:150px;
+     width:150px;
+     padding:4%;
+     box-shadow: 10px 10px 5px #ccc;
+      -webkit-box-shadow: 10px 10px 5px #ccc;
+}
+.text {
+    z-index: -2;
+    color: black;
+    font-size: 20px;
+    position: absolute;
+    top: 50%;
+    left: 30%;
+    text-align: center;
+  }
+  .placeDiv{
+    position: relative;
+    width: 50%;
+  }
+  .placeDiv:hover .overlay {
+    opacity: 0;
+    transition: .20s ease-out;
+    background-color: rgb(0,0,0,0.5);
+  }
+.Content{
+    height:100vh;
+}
+.bgImg{
+    background-image: url(https://media-cdn.tripadvisor.com/media/photo-o/14/10/2e/af/india.jpg);
+    background-position:center;
+    background-size:cover;
+    height:380px;
+    background-repeat: no-repeat;
+}
+#city{
+   border-radius: 12px;
+   border: 1px transparent;
+   border-color: white;
+   background-color: #f1f1f1;
+   padding: 10px;
+   font-size: 16px;
+   top:50%;
+   left:45%;
+   width:200px;
+}
+input.searchCityTag:focus{
+    outline:none;
+}
