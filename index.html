@@ -7,41 +7,69 @@
     <link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet"/>
 </head>
 <body>
-    <div class="body" style="scroll-behavior: auto;">
         <nav class="navbar">
             <div class="websitelogo">
                 <img src="assests/images/logo.png" class="Logo">
-                    <a class="nav-links" id="login" href="login.html" target="_self" style="text-decoration: none;">Login</a>
+            </div>        
+            <div style="margin:2%;">
+                    <a href="login.html" target="_self" style="text-decoration: none;">Login</a>
+            </div> 
+        </nav>
+        <div class="body" style="display: flexbox;">
+            <div class="Content">
+            <div class="bgImg" style="width:100%;">
+                <input class="searchCityTag"id="city" type="text" placeholder="City" style="position: relative;margin: auto;">
             </div>
-        </nav>  
-            <div class="bgImg">
-                <input id="city"type="text" placeholder="City" style="position: relative;margin: auto;">
-            </div>
-            <div class="hotel-images">
+            <div class="hotel-images" style="display:flex;">
+            <div class="placeDiv">
             <a href="list.html">
-            <img src="https://media-cdn.tripadvisor.com/media/photo-s/15/33/fe/a2/new-delhi.jpg" id="placeImg">
-            </a>
-            <img src="https://media-cdn.tripadvisor.com/media/photo-s/15/33/fc/f0/goa.jpg" id="placeImg">
-            <img src="https://media-cdn.tripadvisor.com/media/photo-s/0f/98/f7/df/charminar.jpg" id="placeImg">
-            <img src="https://media-cdn.tripadvisor.com/media/photo-s/15/33/fe/ac/kolkata-calcutta.jpg"id="placeImg">
-            <br><div style="text-align: center;">
+            <img src="https://media-cdn.tripadvisor.com/media/photo-s/15/33/fe/a2/new-delhi.jpg" id="placeImg" class="placeName">
+        </a>
+            <div class="overlay">
+                <div class="text">Delhi</div>
+            </div> 
+            </div>   
+            <div class="placeDiv">
+            <img src="https://media-cdn.tripadvisor.com/media/photo-s/15/33/fc/f0/goa.jpg" id="placeImg" class="placeName">
+            <div class="overlay">
+                <div class="text">Goa</div>
+            </div>  
+        </div>
+            <div class="placeDiv">
+            <img src="https://media-cdn.tripadvisor.com/media/photo-s/0f/98/f7/df/charminar.jpg" id="placeImg"class="placeName">
+            <div class="overlay">
+                <div class="text">Hyderabad</div>
+            </div>  
+        </div>  
+            <div class="placeDiv">
+            <img src="https://media-cdn.tripadvisor.com/media/photo-s/15/33/fe/ac/kolkata-calcutta.jpg"id="placeImg"class="placeName">
+            <div class="overlay">
+                <div class="text">random</div>
+            </div>  
+        </div>  
+    </div>
+            <br><div style="text-align: center;padding-bottom: 100px;">
             <a href="index.html" style="margin:auto;">View more>></a>
             </div>
         </div>
-        <footer class="footer">
-            <a id="contactUs"href="contact.html" target="_self">Contact Us</a>
-            <br/>
-            <a href="https://twitter.com/" target="_blank">
-                <img id="social-media-image"src="assests/images/twitter.png">
-            </a>
+        <footer class="footeralign">
+            <div>
+                <a href="contact.html" target="_self" style="text-decoration:none;">Contact Us</a>
+            </div>
+            <div class="footerText" style="font-size:13px;">&#169; 2020 ROOM SEARCH PVT. LTD</div>
+        <div> 
+            <a href="https://www.facebook.com/" target="_blank">
+                <img  id="social-media-image" src="assests/images/facebook.png">
+            </a>   
             <a href="https://www.instagram.com/" target="_blank">
                 <img id="social-media-image" src="assests/images/instagram.png" >
             </a>
-            <a href="https://www.facebook.com/" target="_blank">
-                <img id="social-media-image"src="assests/images/facebook.png">
+            <a href="https://twitter.com/" target="_blank">
+                <img id="social-media-image" src="assests/images/twitter.png">
             </a>
-            <div class="footerText" style="font-size: 13px;">&#169; 2020 ROOM SEARCH PVT. LTD</div>
-        </footer>
+        </div>
+    </footer>
+    </div>
     </div>
 </body>
 </html>

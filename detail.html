@@ -7,20 +7,27 @@
     <link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet"/>
 </head>
 <body>
-        <nav class="navbar">
-            <div class="websitelogo">
+    <nav class="navbar">
+        <div class="websitelogo">
+            <a href="index.html" target="_self">
                 <img src="assests/images/logo.png" class="Logo">
-                    <a class="nav-links" id="login" href="login.html" target="_self" style="text-decoration: none;">Login</a>
-            </div>
-        </nav>  
+            </a>
+        </div>        
+        <div style="margin:2%;">
+                <a href="login.html" target="_self" style="text-decoration: none;">Login</a>
+        </div> 
+    </nav>
         <div class="body">
-        <div class="Content">
-            <img src="https://media-cdn.tripadvisor.com/media/photo-w/17/b3/09/b4/by-the-poolside.jpg" id="bookedHotel">
-            <div id="paymentForm">
-                <form action="payment.html" method="GET" target="_self">
-                    <table>
-                        <tr> 
-                            <td>Adults:</td>
+        <div class="Content" style="display: flex;">
+        <table style="border:1px solid black;width: 100%;margin-top: 100px;">
+            <tr >
+                <td rowspan="6">
+                    <img src="https://media-cdn.tripadvisor.com/media/photo-w/17/b3/09/b4/by-the-poolside.jpg" id="bookedHotel">
+                </td>
+                <div id="paymentForm">
+                    <form action="payment.html" method="GET" target="_self" style="border: 1px solid black;">  
+                    <td>Adults:</td>
+                          
                             <td>
                                 <input type="number" min="1" required>
                             </td>
@@ -54,14 +61,16 @@
                                 <button>Book Now</button>
                             </td>
                         </tr>
+                    </tr> 
                     </table>
                 </div>
                 </form>
+            </div>    
                 <div id="hotelInfo">
                 <h2>Radisson Blu Hotel</h2>
-                   RATING<br><br>
+                   <h5>RATING</h5>
                    5 star<br><br>
-                <p>AMENITIES
+                <p><b>AMENITIES</b>
                     <ul>
                         <li>Room Service</li>
                         <li>Restaurant</li>
@@ -74,20 +83,24 @@
                 <h5>DESCRIPTION</h5>
                 <p>sajb jhdjajk behiji dejijdi idsjfijn i9oykkt jnrjnr cdsjncx b hjhn bybkn fdjkvdhvds ncjdsjkdjk</p><br/><br/>
             </div>
+            <footer class="footeralign">
+                <div>
+                    <a href="contact.html" target="_self" style="text-decoration:none;">Contact Us</a>
+                </div>
+                <div class="footerText" style="font-size:13px;">&#169; 2020 ROOM SEARCH PVT. LTD</div>
+            <div> 
+                <a href="https://www.facebook.com/" target="_blank">
+                    <img  id="social-media-image" src="assests/images/facebook.png">
+                </a>   
+                <a href="https://www.instagram.com/" target="_blank">
+                    <img id="social-media-image" src="assests/images/instagram.png" >
+                </a>
+                <a href="https://twitter.com/" target="_blank">
+                    <img id="social-media-image" src="assests/images/twitter.png">
+                </a>
             </div>
-        <footer class="footer">
-            <a id="contactUs"href="contact.html" target="_self">Contact Us</a>
-            <br/>
-            <a href="https://twitter.com/" target="_blank">
-                <img id="social-media-image"src="assests/images/twitter.png">
-            </a>
-            <a href="https://www.instagram.com/" target="_blank">
-                <img id="social-media-image" src="assests/images/instagram.png" >
-            </a>
-            <a href="https://www.facebook.com/" target="_blank">
-                <img id="social-media-image"src="assests/images/facebook.png">
-            </a><div class="footerText">&#169; 2020 ROOM SEARCH PVT. LTD</div>
         </footer>
+        </div>
     </div>
 </body>
 </html>
