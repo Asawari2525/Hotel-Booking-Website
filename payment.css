@@ -1,21 +1,28 @@
-.payingHotel{
+#hotel-details {
     background-color: rgb(132, 136, 139);
-    width:50%;
-    margin-top:7%;
-    margin-bottom:2%;
+    width: 50%;
+    height: 20%;
+    margin: 2% auto;
+    display: flex;
+    align-items: center;
 }
-#payingHotelImg{
-    height:200px;
-     width:200px;
+
+#payment-container {
+    margin-top:10%;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
 }
-#payDetails{
-    margin:2%;
+.hotel-image {
+    max-height: 300px;
+    max-width: 270px;
+}
+#customer-payment-details {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    border: black 1px solid;
     border-radius: 5px;
-    border: 1px solid black;
-    padding:1% 2%;
+    margin: 0% 2%;
     background-color: rosybrown;
-    margin-bottom: 100px;
-}
-.Content{
-    height:100vh;
 }
