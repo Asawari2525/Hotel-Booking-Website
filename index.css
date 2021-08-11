@@ -45,7 +45,6 @@
 #search-input:focus {
   outline: none;
 }
-
 .overlay {
   position: absolute;
   top: 0;
@@ -66,6 +65,7 @@
 }
 #view-more {
   margin-bottom:7%;
+  margin-top:0%;
   display: flex;
   justify-content: center;
 }
