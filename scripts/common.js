@@ -88,19 +88,32 @@ function loginFunction(){
     var pass = document.getElementById('password');
     if(lg.innerText === 'Login'){
         if(un.value === 'admin' && pass.value === 'admin'){
-        weblg.innerText = 'LOGOUT';
         localStorage.setItem("UserName", un);
         localStorage.setItem("PassWord", pass); 
         alert('Successfull Loggedin');
+        console.log(document.getElementById("login-button").innerHTML);
+        weblg.innerText = "LOGOUT";
+        weblg.setAttribute("data-toggle","none");
+        document.getElementById("loginModal").setAttribute("display","none");
+        document.getElementById("m1").removeAttribute("disabled");
         }else{
             if( un === "" && pass === ""){
                 alert("Empty Credentials!!!");
-            }else alert('Try Again');
+            }else{ 
+                alert('Try Again');
+                un.value = "";
+                pass.value ="";
+                localStorage.setItem("UserName", un );
+                localStorage.setItem("Password", pass);
         }
-    }
-     if(weblg.innerText === 'LOGOUT'){
+        }
+    }else if(lg.innerHTML === "LOGOUT"){
+        console.log(document.getElementById("login-button").innerHTML);
         weblg.innerText = 'LOGIN';
+        weblg.setAttribute("data-toggle","modal");
         mocls.style.display = "none";
-
-    }
+        document.getElementById("loginModal").setAttribute("data-dismiss","modal");
+        localStorage.clear();
+        document.getElementById("m1").disabled="true";
+ }
 }
