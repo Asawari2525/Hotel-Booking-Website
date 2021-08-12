@@ -1,9 +1,10 @@
- payOf();
+payOf();
  function payOf(){
-    var pay = document.getElementById('payingBtn');
-    var lgP = document.getElementById('login');
-    if(lgP.innerText === "LOGOUT"){
-        pay.disabled = false;
+    var lgP = document.getElementById('login-button');
+    if(lgP.innerHTML == "LOGOUT"){
+        alert("Hi your Booking is Successfull");
+    }else{
+        document.getElementById("m1").setAttribute("disabled",true);
     }
  }
  function paymentAlert(){
